@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(315deg, rgba(35, 49, 78, 0.89), rgba(25, 33, 49, 0.9), rgba(35, 33, 49, 0.8));
+    justify-content: center;
+    display: absolute;
+    z-index: -1;
+}
+
+.navbar {
+    font-family: 'Fredoka One', cursive;
+    background: linear-gradient(to bottom, rgb(18, 19, 22), transparent);
+    height: 15%;;
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo-text {
+    justify-content: left;
+    display: inline-flex;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+#sign,
+#parenthese {
+    font-size: 20pt;
+    color: rgb(151, 180, 233);
+}
+
+#letters {
+    font-size: 20pt;
+    color: rgb(138, 138, 139);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:rgba(35, 49, 78, transparent);
+    position: relative;
+}
+
+#links {
+    display: none;
+}
+
+.topnav a.icon {
+    padding: 14px 16px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color:rgba(35, 49, 78, 0.8);
+    color:rgb(151, 180, 233);
+}
+
+main {
+    display: inline-flex;
+    margin: 3% 10% 3% auto;
+    padding: 3% 10% 3% auto;
+}
+
+.is {
+    font-size: 25pt;
+    color:rgb(117, 130, 161);
+    font-weight: lighter;
+    font-family: "Fredoka One";
+}
+
+.title {
+    font-size: 30pt;
+    color:rgb(151, 180, 233);
+    margin-left: 10%;
+}
+
+.and {
+    font-size: 32pt;
+    font-family: "Rancho", cursive;
+    color:royalblue;
+}
+
+img {
+    margin: auto;
+}
