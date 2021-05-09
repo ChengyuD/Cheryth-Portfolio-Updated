@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/portfolio.css">
+    <title>Cheryth D's Portfolio Webpage</title>
+</head>
+
+<body>
+    <!--mobile with nav on top left in drop down style-->
+    <nav class="navbar" id="navbar">
+        <div class="topnav">
+            <span class="logo-text"><span id="sign">$</span><span id="parenthese">(</span><span id="letters">CD</span><span id="parenthese">)</span></span>
+            <div id="links">
+                <a href="index.html">
+                    <span class="home-text"><i id="fas fa-home" style="font-size: 20pt; color: rgb(138, 138, 139);"></i><br>Home</span>
+                </a>
+                <a href="about.html">
+                    <span class="about-text"><i id="far fa-user-circle"
+                            style="font-size: 20pt; color: rgb(138, 138, 139);"></i><br>About</span>
+                </a>
+                <a href="portfolio.html">
+                    <span class="portfolio-text"><i id="fas fa-code"
+                            style="font-size: 20pt; color: rgb(138, 138, 139);"></i><br>Portfolio</span>
+                </a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars" style="font-size: 20pt; color: rgb(138, 138, 139);"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <span class="intro" style="font-size: 36pt; color: rgb(138, 138, 139); font-family: Rancho; font-weight: bolder;">
+            Cheryth D. <span class="is">is</span><br>
+            <span class="title">Designer <span class="and">&</span> Developer</span>
+        </span>
+    </main>
+    <img src="assets/images/me.jpg" style="height: 30%; width: 45%; padding: 5% ">
+
+    <script>
+        function myFunction() {
+    var x = document.getElmentById("links");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+        }
+    }
+    </script>
+    <script src="https://kit.fontawesome.com/8d4dec34ed.js" crossorigin="anonymous"></script>
+    <script src="assets/portfolio.js"></script>
+</body>
+</html>
