@@ -21,51 +21,50 @@ body {
     margin: auto;
 }
 
-.logo-text {
-    justify-content: left;
-    display: inline-flex;
-    padding-top: 3%;
-    padding-left: 3%;
-}
-
-#sign,
-#parenthese {
-    font-size: 20pt;
-    color: rgb(151, 180, 233);
-}
-
-#letters {
-    font-size: 20pt;
-    color: rgb(138, 138, 139);
-}
-
 .topnav {
     overflow: hidden;
     background-color:rgba(35, 49, 78, transparent);
     position: relative;
 }
 
+#img-icon {
+    margin: 15px 15px;
+}
+
 #links {
-    display: none;
+    margin: 35px 15px;
 }
 
-.topnav a.icon {
-    padding: 14px 16px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+#img-icon,
+#links {
+    display: inline-block;
 }
 
-.topnav a:hover {
-    background-color:rgba(35, 49, 78, 0.8);
-    color:rgb(151, 180, 233);
+#links a {
+    text-decoration: none;
+    color: rgb(138, 138, 139);
+    padding: 3px 3px;
 }
 
 main {
-    display: inline-flex;
-    margin: 3% 10% 3% auto;
-    padding: 3% 10% 3% auto;
+    display: block;
+    position: relative;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.home-title-box {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.home-title {
+    background: -webkit-linear-gradient(217deg, rgb(127, 250, 127) 20%, rgb(2, 191, 248) 35%, rgb(135, 76, 243) 50%, rgba(236, 101, 101) 65%, rgb(230, 139, 79) 80%, rgb(236, 224, 113) 95%);
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 15px;
 }
 
 .is {
