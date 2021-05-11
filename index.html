@@ -21,34 +21,36 @@
             <div id="img-icon" class="nav-left" style="position: relative; width: 65px; height: 65px; overflow: hidden; border-radius: 50%; z-index: 1;">
                 <img src="assets/images/me.jpg" style="width: 100%; height: auto;">
             </div>
-            <div id="links" style="color:rgb(138, 138, 139); font-size: 12pt; position: relative; display: inline; float: right;">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="https://github.com/ChengyuD"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/chengyu-cheryth-dai-130746a1/"><i class="fab fa-linkedin"></i></a>
+            <div id="linksHome" style="color:rgb(138, 138, 139); font-size: 12pt; position: relative; display: inline; float: right;">
+                <a href="https://github.com/ChengyuD"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/chengyu-cheryth-dai-130746a1/"><i class="fab fa-linkedin fa-lg"></i></a>
             </div>
         </div>
     </nav>
 
-    <main>
+    <main class="container">
         <div class="home-title-box" style="opacity: 1;">
             <h1 id="home-title" class="home-title" style="font-family: 'Play', sans-serif; font-size: 27pt; font-weight: bold;">
-                Cheryth is<br>Designer & Developer
+                Cheryth is a<br>Designer & Developer
             </h1>
         </div>
+
+        <div class="row">
+            <div class="column" id="aboutMe">
+                <p>Let's read more</p>
+                <a href="about.html">About Cheryth</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" id="projects">
+                <p>Let's view</p>
+                <a href="portfolio.html">Cheryth's Projects</a>
+            </div>
+        </div>
+
     </main>
 
-    <script>
-        function myFunction() {
-            var x = document.getElmentById("links");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    
     <script src="https://kit.fontawesome.com/8d4dec34ed.js" crossorigin="anonymous"></script>
     <script src="assets/portfolio.js"></script>
 </body>

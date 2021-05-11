@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-image: linear-gradient(315deg, rgba(35, 49, 78, 0.89), rgba(25, 33, 49, 0.9), rgba(35, 33, 49, 0.8));
     justify-content: center;
@@ -16,14 +16,14 @@ body {
 .navbar {
     font-family: 'Fredoka One', cursive;
     background: linear-gradient(to bottom, rgb(18, 19, 22), transparent);
-    height: 15%;;
+    max-height: 15%;;
     max-width: 100%;
     margin: auto;
 }
 
 .topnav {
     overflow: hidden;
-    background-color:rgba(35, 49, 78, transparent);
+    background-color: rgba(35, 49, 78, transparent);
     position: relative;
 }
 
@@ -31,13 +31,24 @@ body {
     margin: 15px 15px;
 }
 
+#linksHome {
+    margin: 35px 30px 35px 10px;
+}
+
 #links {
     margin: 35px 15px;
 }
 
 #img-icon,
+#linksHome
 #links {
     display: inline-block;
+}
+
+#linksHome a {
+    text-decoration: none;
+    color: rgb(138, 138, 139);
+    padding: 3px 10px;
 }
 
 #links a {
@@ -46,17 +57,20 @@ body {
     padding: 3px 3px;
 }
 
-main {
+.container {
     display: block;
     position: relative;
     padding-top: 5px;
     overflow: hidden;
+    height: 80%;
+    max-width: 100%;
 }
 
 .home-title-box {
     box-sizing: border-box;
     max-width: 100%;
     min-width: 0;
+    height: 25%;
 }
 
 .home-title {
@@ -67,25 +81,63 @@ main {
     margin: 15px 15px;
 }
 
-.is {
-    font-size: 25pt;
-    color:rgb(117, 130, 161);
+.row {
+    height: 36%;
+    width: 100%;
+    justify-content: center;
+}
+
+.column {
+    position: inline-flex;
+    width: 80%;
+    height: 70%;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#aboutMe,
+#projects {
+    text-align: center;
+    padding: 10px 10px;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+#aboutMe {
+    box-shadow: 6px 5px 6px 5px rgb(135, 135, 236);
+    background: linear-gradient(to right, rgb(68, 182, 228), rgb(80, 128, 216), rgb(71, 112, 226), rgb(67, 86, 192));
+}
+
+#projects {
+    box-shadow: 6px 5px 6px 5px rgb(135, 135, 236);
+    background: linear-gradient(to left, rgb(68, 182, 228), rgb(80, 128, 216), rgb(71, 112, 226), rgb(67, 86, 192));
+}
+
+.column p {
+    font-family: 'Play', sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    color:rgb(5, 31, 116);
+    z-index: 5;
+    opacity: 1;
+    margin: 7% auto;
+}
+
+.column a {
+    font-family: 'Fredoka One', cursive;
+    font-size: 15pt;
     font-weight: lighter;
-    font-family: "Fredoka One";
+    text-decoration: none;
+    color: rgb(243, 245, 247);
+    padding: 3px 3px;
+    opacity: 1;
+    z-index: 5;
 }
 
-.title {
-    font-size: 30pt;
-    color:rgb(151, 180, 233);
-    margin-left: 10%;
-}
-
-.and {
-    font-size: 32pt;
-    font-family: "Rancho", cursive;
-    color:royalblue;
-}
-
-img {
-    margin: auto;
+.column a:hover {
+    color: blue;
 }
