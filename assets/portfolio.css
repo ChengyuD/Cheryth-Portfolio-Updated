@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     background-size: cover;
     background-image: linear-gradient(315deg, rgba(35, 49, 78, 0.89), rgba(25, 33, 49, 0.9), rgba(35, 33, 49, 0.8));
     justify-content: center;
@@ -13,6 +13,7 @@ body {
     z-index: -1;
 }
 
+/* navigations for "home", "about" and "portfolio" pages */
 .navbar {
     font-family: 'Fredoka One', cursive;
     background: linear-gradient(to bottom, rgb(18, 19, 22), transparent);
@@ -57,6 +58,12 @@ body {
     padding: 3px 3px;
 }
 
+#linksHome a:hover,
+#links a:hover {
+    color: blue;
+}
+
+/* main contents for "home", "about" and "portfolio" pages */
 .container {
     display: block;
     position: relative;
@@ -66,14 +73,27 @@ body {
     max-width: 100%;
 }
 
-.home-title-box {
+.home-title-box,
+.about-title-box,
+.port-title-box {
     box-sizing: border-box;
     max-width: 100%;
     min-width: 0;
+}
+
+.home-title-box {
     height: 25%;
 }
 
-.home-title {
+.about-title-box {
+    height: 15%;
+}
+
+.port-title-box {
+    height: 10%;
+}
+
+h1 {
     background: -webkit-linear-gradient(217deg, rgb(127, 250, 127) 20%, rgb(2, 191, 248) 35%, rgb(135, 76, 243) 50%, rgba(236, 101, 101) 65%, rgb(230, 139, 79) 80%, rgb(236, 224, 113) 95%);
     color: #fff;
     -webkit-background-clip: text;
@@ -81,12 +101,31 @@ body {
     margin: 15px 15px;
 }
 
+/* styling row content for 'home', 'about', 'portofolio" */
 .row {
     height: 36%;
     width: 100%;
     justify-content: center;
 }
 
+.row-about-one {
+    height: 68%;
+    width: 100%;
+    justify-content: center;
+}
+
+.row-about-two {
+    height: 15%;
+    width: 00%;
+    justify-content: center;
+}
+
+.row-port {
+    height: 30%;
+    width: 80%;
+}
+
+/* column styling for 'home', 'about', 'portoflio' */
 .column {
     position: inline-flex;
     width: 80%;
@@ -96,7 +135,42 @@ body {
     z-index: 1;
     overflow-x: hidden;
     margin-left: 5%;
-    margin-right: 5%;
+}
+
+#about-text {
+    width: 90%;
+    height: 80%;
+}
+
+#about-text p {
+    color: rgb(138, 138, 139);
+    font-size: 15pt;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 3%;
+}
+
+#about-links a {
+    padding: 0 20px;
+}
+
+.column-port {
+    width: 75%;
+    height: 90%;
+    margin-left: 35%;
+}
+
+.column-port img {
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+    color: rgb(138, 138, 139);
+    justify-content: center;
 }
 
 #aboutMe,
@@ -118,9 +192,8 @@ body {
 }
 
 .column p {
-    font-family: 'Play', sans-serif;
-    font-size: 20pt;
-    font-weight: bolder;
+    font-family: 'Fredoka One', cursive;
+    font-size: 22pt;
     color:rgb(5, 31, 116);
     z-index: 5;
     opacity: 1;
@@ -128,9 +201,9 @@ body {
 }
 
 .column a {
-    font-family: 'Fredoka One', cursive;
-    font-size: 15pt;
-    font-weight: lighter;
+    font-family: 'Play', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
     text-decoration: none;
     color: rgb(243, 245, 247);
     padding: 3px 3px;
@@ -140,4 +213,12 @@ body {
 
 .column a:hover {
     color: blue;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
 }
